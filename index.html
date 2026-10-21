@@ -1087,5 +1087,8 @@ function hSearch(){
 document.body.addEventListener('touchstart',()=>getAC(),{once:true});
 
 </script>
+<!-- 更新した日時（GitHub に反映した日時が自動で出る） -->
+<div id="appVer" style="position:fixed;right:max(4px,env(safe-area-inset-right));bottom:max(2px,env(safe-area-inset-bottom));font:10px/1.2 sans-serif;color:#888;opacity:.75;pointer-events:none;z-index:2147483647"></div>
+<script>(function(){var e=document.getElementById('appVer'),d=new Date(document.lastModified);if(isNaN(d)||Math.abs(Date.now()-d)<5000){e.remove();return;}function p(n){return('0'+n).slice(-2);}e.textContent='更新 '+d.getFullYear()+'/'+p(d.getMonth()+1)+'/'+p(d.getDate())+' '+p(d.getHours())+':'+p(d.getMinutes());})();</script>
 </body>
 </html>
